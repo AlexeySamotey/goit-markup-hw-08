@@ -1,0 +1,27 @@
+.clients-list:not(:first-child) {
+  margin-left: 30px;
+}
+.company-list {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients a:hover,
+.clients a:focus {
+  border: 1px solid $accent-color;
+  fill: $accent-color;
+}
+.clients a {
+  fill: #afb1b8;
+  transition: all 250ms $timing-function;
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+  }
+}

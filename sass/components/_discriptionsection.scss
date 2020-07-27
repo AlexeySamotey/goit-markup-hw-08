@@ -1,0 +1,39 @@
+.description {
+  padding-top: 94px;
+}
+.function {
+  visibility: hidden;
+  line-height: 0;
+}
+
+.features-list {
+  width: 270px;
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.features-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f5f4fa;
+  height: 120px;
+  border-radius: 4px;
+}
+
+.features-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.features .title {
+  @include font($font-main, 14px, 1.14, 700);
+  text-transform: uppercase;
+}
+
+.features-item {
+  line-height: 1.71;
+  color: $title-color;
+}

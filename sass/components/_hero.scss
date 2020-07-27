@@ -1,0 +1,21 @@
+.features,
+.our-work,
+.our-team,
+.clients {
+  display: flex;
+}
+.section {
+  padding-bottom: 94px;
+}
+.section-title {
+  @include font($font-main, 36px, 1.17, 700);
+  text-align: center;
+}
+.section .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.team,
+.our-clients {
+  padding-top: 94px;
+}

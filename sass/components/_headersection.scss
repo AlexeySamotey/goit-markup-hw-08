@@ -1,0 +1,39 @@
+.header {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  align-items: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../img/Header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #000000;
+  color: $effect-color;
+}
+.header-title {
+  @include font($font-main, 44px, 1.36, 900);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $effect-color;
+}
+.header {
+  & > .button {
+    display: block;
+  }
+  & > h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.section > .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}

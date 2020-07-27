@@ -1,0 +1,80 @@
+.projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &-title {
+    visibility: hidden;
+    line-height: 0;
+    margin: 0;
+  }
+  &-scroll {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.project-list {
+  width: calc((100% - 30px * 2) / 3);
+  margin-right: 30px;
+  border: 1px solid #eeeeee;
+  transition: box-shadow 250ms $timing-function;
+  &:hover,
+  &:focus {
+    & .overlay {
+      opacity: 1;
+      background: rgba(33, 150, 243, 0.9);
+      color: $effect-color;
+      height: 100%;
+      width: 100%;
+      transform: translateY(0);
+    }
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+}
+.project-list:nth-child(3n) {
+  margin-right: 0;
+}
+.project-list:nth-child(n + 4) {
+  margin-top: 30px;
+}
+
+.picture {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+
+  transition: transform 250ms $timing-function,
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(33, 150, 243, 0.9);
+  color: $effect-color;
+}
+
+.project-text {
+  padding: 63px 24px;
+  @include font($font-main, 18px, 1.56);
+  letter-spacing: 0.03em;
+}
+
+.project-discription {
+  padding: 20px 24px;
+}
+
+.project-item {
+  @include font($font-main, 18px, 2, 700);
+  letter-spacing: 0.06em;
+  color: $primary-color;
+}
+.project-type {
+  @include font($font-main, 16px, 1.87);
+  color: $title-color;
+}

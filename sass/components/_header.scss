@@ -1,0 +1,105 @@
+.site-header-content {
+  align-items: center;
+  display: flex;
+}
+
+header {
+  background-color: $effect-color;
+  border-bottom: 1px solid #ececec;
+}
+
+.site-nav,
+.contact-nav,
+.site-header-content {
+  display: flex;
+}
+
+.logo {
+  align-items: center;
+  &-header {
+    color: #000000;
+  }
+
+  @include font($font-logo, 26px, 1.19, 700);
+  color: $accent-color;
+}
+
+.icon-header {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.top-icon {
+  margin-right: 85px;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.site-header-content {
+  align-items: center;
+}
+
+.site-nav-item {
+  line-height: 80px;
+  &:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+
+.site-nav .link {
+  color: $primary-color;
+  font-weight: 500;
+  transition: all 250ms $timing-function;
+  &.current {
+    color: $accent-color;
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.current {
+  position: relative;
+  display: block;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+
+    width: 100%;
+    height: 4px;
+
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
+}
+
+.contact-nav {
+  margin-left: auto;
+}
+
+.contact-nav .link {
+  @include font($font-main, 14px, 1.14, 500);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  color: $title-color;
+  fill: $title-color;
+  transition: all 250ms $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}
+
+.site-nav-contact-item {
+  margin-right: 30px;
+  transition: all 250ms $timing-function;
+}
