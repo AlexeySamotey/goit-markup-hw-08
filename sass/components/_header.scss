@@ -1,27 +1,33 @@
-.site-header-content {
-  align-items: center;
-  display: flex;
-}
+// .site-header-content {
+//   align-items: center;
+//   display: flex;
+// }
 
 header {
   background-color: $effect-color;
   border-bottom: 1px solid #ececec;
 }
 
-.site-nav,
-.contact-nav,
-.site-header-content {
-  display: flex;
-}
+// .site-nav,
+// .contact-nav,
+// .site-header-content {
+//   display: flex;
+// }
 
 .logo {
   align-items: center;
+  letter-spacing: 0.03em;
+  color: $accent-color;
+
   &-header {
     color: #000000;
   }
-
-  @include font($font-logo, 26px, 1.19, 700);
-  color: $accent-color;
+  @media screen and (max-width: 768px) {
+    @include font($font-logo, 24px, 1.17, 700);
+  }
+  @media screen and (min-width: 769px) {
+    @include font($font-logo, 26px, 1.19, 700);
+  }
 }
 
 .icon-header {
@@ -35,7 +41,7 @@ header {
 
 .section-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .site-header-content {
@@ -43,10 +49,13 @@ header {
 }
 
 .site-nav-item {
-  line-height: 80px;
-  &:not(:first-child) {
-    margin-left: 50px;
+  line-height: 60px;
+  @media screen and (min-width: 768px) {
+    line-height: 80px;
   }
+  // &:not(:first-child) {
+  //   margin-left: 50px;
+  // }
 }
 
 .site-nav .link {

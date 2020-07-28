@@ -1,8 +1,8 @@
 .header {
-  max-width: 1600px;
+  max-width: 480px;
   margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   align-items: center;
   background-image: linear-gradient(
       to right,
@@ -17,7 +17,7 @@
   color: $effect-color;
 }
 .header-title {
-  @include font($font-main, 44px, 1.36, 900);
+  @include font($font-main, 42px, 1.62, 900);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -31,9 +31,4 @@
     margin-top: 0;
     margin-bottom: 30px;
   }
-}
-
-.section > .title {
-  margin-top: 30px;
-  margin-bottom: 10px;
 }

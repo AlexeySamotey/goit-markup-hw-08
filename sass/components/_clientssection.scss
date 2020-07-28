@@ -1,8 +1,9 @@
-.clients-list:not(:first-child) {
-  margin-left: 30px;
-}
+// .clients-list:not(:first-child) {
+//   margin-left: 30px;
+// }
+
 .company-list {
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -24,4 +25,12 @@
     border: 1px solid $accent-color;
     fill: $accent-color;
   }
+}
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.clients-list {
+  margin: 15px;
 }

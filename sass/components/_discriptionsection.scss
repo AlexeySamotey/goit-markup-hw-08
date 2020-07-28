@@ -1,5 +1,5 @@
 .description {
-  padding-top: 94px;
+  padding-top: 60px;
 }
 .function {
   visibility: hidden;
@@ -7,10 +7,14 @@
 }
 
 .features-list {
-  width: 270px;
-  &:not(:first-child) {
-    margin-left: 30px;
+  width: 450px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
   }
+  // width: 270px;
+  // &:not(:first-child) {
+  //   margin-left: 30px;
+  // }
 }
 
 .features-logo {
@@ -36,4 +40,9 @@
 .features-item {
   line-height: 1.71;
   color: $title-color;
+}
+.section .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
 }

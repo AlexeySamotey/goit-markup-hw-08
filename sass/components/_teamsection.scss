@@ -3,18 +3,22 @@
 }
 
 .team-member {
-  width: 270px;
-  &:not(:first-child) {
-    margin-left: 30px;
+  width: 450px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
   }
+  // &:not(:first-child) {
+  //   margin-left: 30px;
+  // }
 }
 
 .team-info {
-  padding: 30px 32px 24px;
+  padding: 30px 122px 24px;
 }
 
 .team-list {
   @include font($font-main, 16px, 1.19, 500);
+  letter-spacing: 0.03em;
 }
 
 .team {
@@ -32,5 +36,9 @@
   margin-top: 10px;
 
   @include font($font-main, 16px, 1.19);
+  letter-spacing: 0.03em;
   color: $title-color;
+}
+.team-card > img {
+  width: 100%;
 }

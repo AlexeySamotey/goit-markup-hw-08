@@ -1,16 +1,16 @@
-.projects {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  &-title {
-    visibility: hidden;
-    line-height: 0;
-    margin: 0;
-  }
-  &-scroll {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
+// .projects {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+//   &-title {
+//     visibility: hidden;
+//     line-height: 0;
+//     margin: 0;
+//   }
+//   &-scroll {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+// }
 
 .project-list {
   width: calc((100% - 30px * 2) / 3);

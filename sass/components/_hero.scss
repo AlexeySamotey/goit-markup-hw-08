@@ -1,21 +1,21 @@
-.features,
-.our-work,
-.our-team,
-.clients {
-  display: flex;
-}
+// .features,
+// .our-work,
+// .our-team,
+// .clients {
+//   display: flex;
+// }
 .section {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 }
 .section-title {
-  @include font($font-main, 36px, 1.17, 700);
+  @include font($font-main, 28px, 1.18, 700);
+  letter-spacing: 0.03em;
   text-align: center;
-}
-.section .title {
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
 .team,
 .our-clients {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+.works {
+  display: none;
 }
