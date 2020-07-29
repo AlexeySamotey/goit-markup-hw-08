@@ -27,6 +27,8 @@
 .social-link,
 .social-link-footer {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-social:not(:first-child),

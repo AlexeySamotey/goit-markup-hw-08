@@ -17,6 +17,7 @@
   color: $effect-color;
 }
 .header-title {
+  white-space: nowrap;
   @include font($font-main, 42px, 1.62, 900);
   text-align: center;
   letter-spacing: 0.06em;
