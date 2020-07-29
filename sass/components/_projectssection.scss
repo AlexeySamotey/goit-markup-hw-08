@@ -1,20 +1,20 @@
-// .projects {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-//   &-title {
-//     visibility: hidden;
-//     line-height: 0;
-//     margin: 0;
-//   }
-//   &-scroll {
-//     display: flex;
-//     flex-wrap: wrap;
-//   }
-// }
+.projects {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &-title {
+    visibility: hidden;
+    line-height: 0;
+    margin: 0;
+  }
+  // &-scroll {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // }
+}
 
 .project-list {
-  width: calc((100% - 30px * 2) / 3);
-  margin-right: 30px;
+  // width: calc((100% - 30px * 2) / 3);
+  // margin-right: 30px;
   border: 1px solid #eeeeee;
   transition: box-shadow 250ms $timing-function;
   &:hover,
@@ -31,18 +31,22 @@
       0px 1px 1px rgba(0, 0, 0, 0.12);
   }
 }
-.project-list:nth-child(3n) {
-  margin-right: 0;
+// .project-list:nth-child(3n) {
+//   margin-right: 0;
+// }
+// .project-list:nth-child(n + 4) {
+//   margin-top: 30px;
+// }
+.project-list:not(:last-child) {
+  margin-bottom: 30px;
 }
-.project-list:nth-child(n + 4) {
-  margin-top: 30px;
-}
-
 .picture {
   position: relative;
   overflow: hidden;
 }
-
+.picture > img {
+  width: 100%;
+}
 .overlay {
   position: absolute;
   opacity: 0;
@@ -60,7 +64,7 @@
 }
 
 .project-text {
-  padding: 63px 24px;
+  padding: 20px 24px;
   @include font($font-main, 18px, 1.56);
   letter-spacing: 0.03em;
 }
