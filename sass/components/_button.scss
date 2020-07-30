@@ -20,10 +20,15 @@
   }
 }
 .menu-button {
-  display: inline-block;
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+  display: inline-flex;
+  fill: red;
   margin: 0;
   padding: 0;
   border: none;
+  background-color: white;
 }
 .menu-button .icon-close {
   display: none;
