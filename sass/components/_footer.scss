@@ -25,6 +25,7 @@ footer {
   &:hover,
   &:focus {
     background-color: $accent-color;
+    outline: none;
   }
 }
 
@@ -40,6 +41,7 @@ footer {
   &:hover,
   &:focus {
     color: $accent-color;
+    outline: none;
   }
 }
 

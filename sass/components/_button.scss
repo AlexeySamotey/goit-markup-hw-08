@@ -24,7 +24,7 @@
   // top: 0;
   // right: 0;
   display: inline-flex;
-  fill: red;
+  fill: $primary-color;
   margin: 0;
   padding: 0;
   border: none;
@@ -38,4 +38,10 @@
 }
 .menu-button.is-open .icon-menu {
   display: none;
+}
+.menu-button:focus,
+.menu-button:hover {
+  fill: $accent-color;
+  transition: all 250ms $timing-function;
+  outline: none;
 }

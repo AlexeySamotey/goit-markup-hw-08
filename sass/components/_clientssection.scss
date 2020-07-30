@@ -16,6 +16,7 @@
 .clients a:focus {
   border: 1px solid $accent-color;
   fill: $accent-color;
+  outline: none;
 }
 .clients a {
   fill: #afb1b8;
@@ -24,6 +25,7 @@
   &:focus {
     border: 1px solid $accent-color;
     fill: $accent-color;
+    outline: none;
   }
 }
 .clients {

@@ -19,8 +19,9 @@
         >
         <button
           type="button"
-          class="menu-button is-open"
+          class="menu-button"
           aria-expanded="false"
+          aria-controls="menu-container"
           data-menu-button
         >
           <svg
@@ -28,11 +29,11 @@
             height="40"
             aria-label="переключатель мобильного меню"
           >
-            <use class="icon-menu" href="./img/sprite.svg#menu"></use>
             <use class="icon-close" href="./img/sprite.svg#close"></use>
+            <use class="icon-menu" href="./img/sprite.svg#menu"></use>
           </svg>
         </button>
-        <div class="menu-container is-open" data-menu>
+        <div class="menu-container" id="menu-container" data-menu>
           <ul class="list site-nav">
             <li class="site-nav-item">
               <a href="./index.html" class="link current">Студия</a>
@@ -40,7 +41,9 @@
             <li class="site-nav-item">
               <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
-            <li class="site-nav-item"><a href="" class="link">Контакты</a></li>
+            <li class="site-nav-item">
+              <a href="" class="link">Контакты</a>
+            </li>
           </ul>
           <ul class="list contact-nav">
             <li class="site-nav-contact-item">
