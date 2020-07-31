@@ -29,6 +29,9 @@
   padding: 0;
   border: none;
   background-color: white;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .menu-button .icon-close {
   display: none;
