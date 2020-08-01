@@ -387,6 +387,7 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) {
@@ -495,6 +496,14 @@ header {
           align-items: center;
   letter-spacing: 0.03em;
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .logo-header {
@@ -751,6 +760,7 @@ header {
 
 .section {
   padding-bottom: 60px;
+  display: inline-block;
 }
 
 .section-title {
@@ -1000,7 +1010,6 @@ header {
 }
 
 .company-list {
-  width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   -webkit-box-sizing: border-box;
@@ -1047,6 +1056,7 @@ header {
 
 .clients-list {
   margin: 15px;
+  width: calc((100% - 30px * 2) / 2);
 }
 
 footer {

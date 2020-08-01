@@ -3,7 +3,6 @@
 // }
 
 .company-list {
-  width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -35,4 +34,5 @@
 }
 .clients-list {
   margin: 15px;
+  width: calc((100% - 30px * 2) / 2);
 }
