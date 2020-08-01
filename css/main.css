@@ -966,7 +966,7 @@ header {
 
 @media screen and (max-width: 767px) {
   .team-member {
-    width: 450px;
+    width: 100%;
   }
   .team-member:not(:last-child) {
     margin-bottom: 30px;
