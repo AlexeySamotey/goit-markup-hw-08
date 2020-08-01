@@ -6,6 +6,9 @@
 // }
 .section {
   padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 .section-title {
   @include font($font-main, 28px, 1.18, 700);
@@ -15,7 +18,12 @@
 .team,
 .our-clients {
   padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }
 .works {
-  display: none;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }

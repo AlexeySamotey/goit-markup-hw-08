@@ -9,15 +9,14 @@ footer {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-flow: row wrap;
-    padding-top: 60px 0;
     justify-content: space-between;
     padding: 60px 80px;
   }
-  //
-  // align-items: baseline;
-  //
-  // padding-top: 45px;
-  // padding-bottom: 28px;
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    padding: 45px 0 28px;
+    flex-flow: row nowrap;
+  }
 }
 
 .logo-footer {
@@ -56,33 +55,42 @@ address {
 }
 
 .address-container {
-  @media screen (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  //   // width: calc((100% - 60px) / 4);
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 4);
+  }
 }
 .address-list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
-  margin-top: 20px;
-  @include font($font-main, 14px, 2.07, 400);
+  @include font($font-main, 14px, 1.71, 400);
   letter-spacing: 0.03em;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+    margin-top: 20px;
+  }
 }
 .subscribe-form {
   @media screen and (min-width: 768px) {
     width: 450px;
     margin: 0 auto;
   }
-  //   width: calc((100% - 60px) / 2);
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 2);
+    margin: 0;
+  }
 }
 .subscribe {
-  margin-bottom: 60px;
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
   }
-  // width: calc((100% - 60px) / 4);
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 4);
+  }
 }
 .sub-icon {
   width: 24px;
@@ -90,11 +98,15 @@ address {
   margin-left: 10px;
 }
 .sub-btn {
-  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  // margin-left: 12px;
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 .footer-form > input[type="text"] {
   width: 100%;
@@ -106,23 +118,26 @@ address {
   outline: none;
   padding: 15px;
   color: #fff;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .footer-form {
   display: flex;
-  flex-direction: column;
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+  }
 }
-// .subcribe-form {
-//   // //   align-items: center;
-//   //   justify-content: center;
-//   // }
-//   // .copyright {
-//   // //   width: 310px;
 
-//   //   font-size: 12px;
-//   //   line-height: 2;
-//   //   text-align: center;
-//   //   color: rgba(255, 255, 255, 0.4);
+// .copyright {
+//   @media screen and (min-width: 1200px) {
+//     width: 310px;
+//     font-size: 12px;
+//     line-height: 2;
+//     text-align: center;
+//     color: rgba(255, 255, 255, 0.4);
+//   }
 // }
 
 //   // display: flex;
