@@ -1176,8 +1176,29 @@ header {
 }
 
 .clients-list {
-  margin: 15px;
   width: calc((100% - 30px * 2) / 2);
+}
+
+@media screen and (max-width: 1199px) {
+  .clients-list {
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list {
+    width: calc((100% - 30px * 3) / 3);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    width: calc((100% - 30px * 6) / 6);
+  }
+  .clients-list :not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
 footer {
