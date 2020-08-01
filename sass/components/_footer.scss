@@ -4,12 +4,18 @@ footer {
 }
 
 .footer-container {
-  margin: 0 auto;
   padding: 60px 0;
   text-align: center;
-  // display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 60px 0;
+    justify-content: space-between;
+    padding: 60px 80px;
+  }
+  //
   // align-items: baseline;
-  // justify-content: space-between;
+  //
   // padding-top: 45px;
   // padding-bottom: 28px;
 }
@@ -49,9 +55,14 @@ address {
   font-style: normal;
 }
 
-// .address-container {
-//   // width: calc((100% - 60px) / 4);
-// }
+.address-container {
+  @media screen (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  //   // width: calc((100% - 60px) / 4);
+}
 .address-list {
   display: flex;
   flex-direction: column;
@@ -60,11 +71,17 @@ address {
   @include font($font-main, 14px, 2.07, 400);
   letter-spacing: 0.03em;
 }
-// .subscribe-form {
-// //   width: calc((100% - 60px) / 2);
-// // }
+.subscribe-form {
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin: 0 auto;
+  }
+  //   width: calc((100% - 60px) / 2);
+}
 .subscribe {
   margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+  }
   // width: calc((100% - 60px) / 4);
 }
 .sub-icon {

@@ -824,7 +824,6 @@ header {
 }
 
 .header-title {
-  white-space: nowrap;
   font-family: Roboto, sans-serif;
   font-size: 26px;
   font-weight: 900;
@@ -1207,9 +1206,25 @@ footer {
 }
 
 .footer-container {
-  margin: 0 auto;
   padding: 60px 0;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    padding-top: 60px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 60px 80px;
+  }
 }
 
 .logo-footer {
@@ -1253,6 +1268,19 @@ address {
   font-style: normal;
 }
 
+.address-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .address-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1268,6 +1296,13 @@ address {
   font-weight: 400;
   line-height: 2.07;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-form {
+    width: 450px;
+    margin: 0 auto;
+  }
 }
 
 .subscribe {
