@@ -67,6 +67,7 @@ address {
 .address-list {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
   @include font($font-main, 14px, 1.71, 400);
   letter-spacing: 0.03em;
   @media screen and (max-width: 1199px) {

@@ -6,15 +6,19 @@
     line-height: 0;
     margin: 0;
   }
-  // &-scroll {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  // }
+  @media screen and (min-width: 768px) {
+    &-scroll {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .project-list {
-  // width: calc((100% - 30px * 2) / 3);
-  // margin-right: 30px;
   border: 1px solid #eeeeee;
   transition: box-shadow 250ms $timing-function;
   &:hover,
@@ -31,15 +35,31 @@
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
       0px 1px 1px rgba(0, 0, 0, 0.12);
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 30px) / 2);
+    &:nth-child(even) {
+      margin-left: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px * 2) / 3);
+    margin-right: 30px;
+  }
 }
-// .project-list:nth-child(3n) {
-//   margin-right: 0;
-// }
-// .project-list:nth-child(n + 4) {
-//   margin-top: 30px;
-// }
+.project-list:nth-child(3n) {
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+  }
+}
+.project-list:nth-child(n + 4) {
+  @media screen and (min-width: 1200px) {
+    margin-top: 30px;
+  }
+}
 .project-list:not(:last-child) {
-  margin-bottom: 30px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
 }
 .picture {
   position: relative;
@@ -65,9 +85,14 @@
 }
 
 .project-text {
-  padding: 77px 24px;
   @include font($font-main, 18px, 1.56);
   letter-spacing: 0.03em;
+  @media screen and(max-width:767px) {
+    padding: 77px 24px;
+  }
+  @media screen and(min-width:768px) {
+    padding: 49px 24px;
+  }
 }
 
 .project-discription {
