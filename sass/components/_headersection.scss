@@ -1,8 +1,7 @@
 .header {
-  max-width: 480px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding: 118px 0;
   align-items: center;
   background-image: linear-gradient(
       to right,
@@ -15,6 +14,9 @@
   background-size: cover;
   background-color: #000000;
   color: $effect-color;
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+  }
 }
 .header-title {
   white-space: nowrap;
@@ -23,6 +25,9 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $effect-color;
+  @media screen and (min-width: 1200px) {
+    @include font($font-main, 44px, 1.36, 900);
+  }
 }
 .header {
   & > .button {

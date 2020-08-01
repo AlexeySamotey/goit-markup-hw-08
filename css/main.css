@@ -760,7 +760,6 @@ header {
 
 .section {
   padding-bottom: 60px;
-  display: inline-block;
 }
 
 .section-title {
@@ -782,10 +781,9 @@ header {
 }
 
 .header {
-  max-width: 480px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding: 118px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -798,6 +796,12 @@ header {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 200px 0;
+  }
+}
+
 .header-title {
   white-space: nowrap;
   font-family: Roboto, sans-serif;
@@ -808,6 +812,15 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-title {
+    font-family: Roboto, sans-serif;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+  }
 }
 
 .header > .button {
@@ -823,17 +836,53 @@ header {
   padding-top: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .description {
+    padding-top: 94px;
+  }
+}
+
 .function {
   visibility: hidden;
   line-height: 0;
 }
 
-.features-list {
-  width: 450px;
+@media screen and (min-width: 768px) {
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
-.features-list:not(:last-child) {
-  margin-bottom: 30px;
+.features-list {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .features-list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-list {
+    width: calc((100% - 15px * 2) / 2);
+  }
+  .features-list:nth-child(even) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list {
+    width: calc((100% - 30px * 3) / 4);
+  }
+  .features-list:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
 .features-logo {
@@ -872,19 +921,25 @@ header {
 .section .title {
   margin-top: 30px;
   margin-bottom: 10px;
-  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .section .title {
+    text-align: center;
+  }
 }
 
 .our-team {
   text-align: center;
 }
 
-.team-member {
-  width: 450px;
-}
-
-.team-member:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .team-member {
+    width: 450px;
+  }
+  .team-member:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .team-info {

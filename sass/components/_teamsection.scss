@@ -3,9 +3,11 @@
 }
 
 .team-member {
-  width: 450px;
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and(max-width:767px) {
+    width: 450px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
   // &:not(:first-child) {
   //   margin-left: 30px;
