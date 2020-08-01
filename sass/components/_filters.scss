@@ -20,15 +20,12 @@
       0px 3px 1px rgba(0, 0, 0, 0.1);
     outline: none;
   }
+
   @media screen and(max-width:767px) {
-    margin-bottom: 40px;
-    &:not(:nth-child(n + 3)) {
-      margin-bottom: 15px;
-    }
-    &:not(:nth-child(n)) {
-      margin-left: 8px;
-    }
+    margin-right: 8px;
+    margin-bottom: 15px;
   }
+
   @media screen and(min-width:768px) {
     &:not(:first-child) {
       margin-left: 8px;
@@ -36,6 +33,10 @@
   }
 }
 .button-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
