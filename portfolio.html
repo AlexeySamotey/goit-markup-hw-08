@@ -16,40 +16,51 @@
         <a class="logo top-icon" href="./index.html"
           >Web <span class="logo-header">Studio</span></a
         >
-        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-          <svg width="40" height="40" aria-label="переключатель мобильного меню">
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="переключатель мобильного меню"
+          >
             <use class="icon-close" href="./img/sprite.svg#close"></use>
             <use class="icon-menu" href="./img/sprite.svg#menu"></use>
           </svg>
         </button>
         <div class="menu-container" id="menu-container" data-menu>
-        <ul class="list site-nav">
-          <li class="site-nav-item">
-            <a href="./index.html" class="link">Студия</a>
-          </li>
-          <li class="site-nav-item">
-            <a href="./portfolio.html" class="link current">Портфолио</a>
-          </li>
-          <li class="site-nav-item"><a href="" class="link">Контакты</a></li>
-        </ul>
-        <ul class="list contact-nav">
-          <li class="site-nav-contact-item">
-            <a class="link" href="mailto:info@devstudio.com">
-              <svg class="icon-header" width="16" height="12">
-                <use href="./img/sprite.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="site-nav-contact-item">
-            <a class="link" href="tel:380961111111">
-              <svg class="icon-header" width="10" height="15">
-                <use href="./img/sprite.svg#phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="list site-nav">
+            <li class="site-nav-item">
+              <a href="./index.html" class="link">Студия</a>
+            </li>
+            <li class="site-nav-item">
+              <a href="./portfolio.html" class="link current">Портфолио</a>
+            </li>
+            <li class="site-nav-item"><a href="" class="link">Контакты</a></li>
+          </ul>
+          <ul class="list contact-nav">
+            <li class="site-nav-contact-item">
+              <a class="link" href="mailto:info@devstudio.com">
+                <svg class="icon-header" width="16" height="12">
+                  <use href="./img/sprite.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="site-nav-contact-item">
+              <a class="link" href="tel:380961111111">
+                <svg class="icon-header" width="10" height="15">
+                  <use href="./img/sprite.svg#phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -112,7 +123,16 @@
             <li class="project-list">
               <a class="project-link" href="">
                 <div class="picture">
-                  <img src="./img/project1.jpg" alt="our people" />
+                  <img
+                    srcset="
+                      ./img/project1.jpg     370w,
+                      ./img/project1@2x.jpg  740w,
+                      ./img/project1@3x.jpg 1110w
+                    "
+                    src="./img/project1.jpg"
+                    alt="our people"
+                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, (min-width:480px) 100vw"
+                  />
                   <div class="overlay">
                     <p class="project-text">
                       Технокряк это современная площадка распространения
@@ -131,7 +151,16 @@
             <li class="project-list">
               <a class="project-link" href="">
                 <div class="picture">
-                  <img src="./img/project2.jpg" alt="basketball duel" />
+                  <img
+                    srcset="
+                      ./img/project2.jpg     370w,
+                      ./img/project2@2x.jpg  740w,
+                      ./img/project2@3x.jpg 1110w
+                    "
+                    src="./img/project2.jpg"
+                    alt="basketball duel"
+                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, (min-width:480px) 100vw"
+                  />
                   <div class="overlay">
                     <p class="project-text">
                       Технокряк это современная площадка распространения
@@ -150,7 +179,16 @@
             <li class="project-list">
               <a class="project-link" href="">
                 <div class="picture">
-                  <img src="./img/project3.jpg" alt="restaurant logo" />
+                  <img
+                    srcset="
+                      ./img/project3.jpg     370w,
+                      ./img/project3@2x.jpg  740w,
+                      ./img/project3@3x.jpg 1110w
+                    "
+                    src="./img/project3.jpg"
+                    alt="restaurant logo"
+                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, (min-width:480px) 100vw"
+                  />
                   <div class="overlay">
                     <p class="project-text">
                       Технокряк это современная площадка распространения
@@ -169,7 +207,16 @@
             <li class="project-list">
               <a class="project-link" href="">
                 <div class="picture">
-                  <img src="./img/project4.jpg" alt="headphones" />
+                  <img
+                    srcset="
+                      ./img/project4.jpg     370w,
+                      ./img/project4@2x.jpg  740w,
+                      ./img/project4@3x.jpg 1110w
+                    "
+                    src="./img/project4.jpg"
+                    alt="headphones"
+                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, (min-width:480px) 100vw"
+                  />
                   <div class="overlay">
                     <p class="project-text">
                       Технокряк это современная площадка распространения
@@ -188,7 +235,16 @@
             <li class="project-list">
               <a class="project-link" href="">
                 <div class="picture">
-                  <img src="./img/project5.jpg" alt="two boxes" />
+                  <img
+                    srcset="
+                      ./img/project5.jpg     370w,
+                      ./img/project5@2x.jpg  740w,
+                      ./img/project5@3x.jpg 1110w
+                    "
+                    src="./img/project5.jpg"
+                    alt="two boxes"
+                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, (min-width:480px) 100vw"
+                  />
                   <div class="overlay">
                     <p class="project-text">
                       Технокряк это современная площадка распространения
@@ -207,7 +263,16 @@
             <li class="project-list">
               <a class="project-link" href="">
                 <div class="picture">
-                  <img src="./img/project6.jpg" alt="monitor apple" />
+                  <img
+                    srcset="
+                      ./img/project6.jpg     370w,
+                      ./img/project6@2x.jpg  740w,
+                      ./img/project6@3x.jpg 1110w
+                    "
+                    src="./img/project6.jpg"
+                    alt="monitor apple"
+                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, (min-width:480px) 100vw"
+                  />
                   <div class="overlay">
                     <p class="project-text">
                       Технокряк это современная площадка распространения
@@ -226,7 +291,16 @@
             <li class="project-list">
               <a class="project-link" href="">
                 <div class="picture">
-                  <img src="./img/project7.jpg" alt="book" />
+                  <img
+                    srcset="
+                      ./img/project7.jpg     370w,
+                      ./img/project7@2x.jpg  740w,
+                      ./img/project7@3x.jpg 1110w
+                    "
+                    src="./img/project7.jpg"
+                    alt="book"
+                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, (min-width:480px) 100vw"
+                  />
                   <div class="overlay">
                     <p class="project-text">
                       Технокряк это современная площадка распространения
@@ -245,7 +319,16 @@
             <li class="project-list">
               <a class="project-link" href="">
                 <div class="picture">
-                  <img src="./img/project8.jpg" alt="label" />
+                  <img
+                    srcset="
+                      ./img/project8.jpg     370w,
+                      ./img/project8@2x.jpg  740w,
+                      ./img/project8@3x.jpg 1110w
+                    "
+                    src="./img/project8.jpg"
+                    alt="label"
+                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, (min-width:480px) 100vw"
+                  />
                   <div class="overlay">
                     <p class="project-text">
                       Технокряк это современная площадка распространения
@@ -264,7 +347,16 @@
             <li class="project-list">
               <a class="project-link" href="">
                 <div class="picture">
-                  <img src="./img/project9.jpg" alt="laptop" />
+                  <img
+                    srcset="
+                      ./img/project9.jpg     370w,
+                      ./img/project9@2x.jpg  740w,
+                      ./img/project9@3x.jpg 1110w
+                    "
+                    src="./img/project9.jpg"
+                    alt="laptop"
+                    sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, (min-width:480px) 100vw"
+                  />
                   <div class="overlay">
                     <p class="project-text">
                       Технокряк это современная площадка распространения

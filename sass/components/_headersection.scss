@@ -1,23 +1,68 @@
 .header {
-  max-width: 1600px;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
   padding: 118px 0;
   align-items: center;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
-    ),
-    url(../img/Header.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: #000000;
   color: $effect-color;
+  @media screen and (max-width: 758px) {
+    max-width: 758px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../img/Header480.jpg);
+  }
+  @media screen and (min-width: 759px) {
+    max-width: 1200px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../img/Header768.jpg);
+  }
   @media screen and (min-width: 1200px) {
+    max-width: 1600px;
     padding: 200px 0;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../img/Header1200.jpg);
   }
 }
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .header {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../img/header1200@2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 3),
+  screen and (min-resolution: 3dppx),
+  screen and (min-resolution: 288dpi) {
+  .header {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../img/header1200@3x.jpg);
+  }
+}
+
 .header-title {
   @include font($font-main, 26px, 1.62, 900);
   text-align: center;
