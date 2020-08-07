@@ -15,6 +15,7 @@
   }
 }
 .modal {
+  position: relative;
   padding: 40px;
   background-color: $effect-color;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -125,8 +126,8 @@ textarea {
 }
 .form-label-area {
   position: absolute;
-  top: 325px;
-  left: 15px;
+  top: 58%;
+  left: 5%;
   transform: translateY(-50%);
   transition: transform 250ms $timing-function;
   @media screen and (min-width: 1200px) {
